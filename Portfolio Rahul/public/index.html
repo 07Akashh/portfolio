@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config ={
+            theme: {
+    extend: {
+    keyframes: {
+        typing: {
+        "0%": {
+            width: "0%",
+            visibility: "hidden"
+        },
+        "100%": {
+            width: "36%"
+        }
+        },
+        blink: {
+        "50%": {
+            borderColor: "transparent"
+        },
+        "100%": {
+            borderColor: "white"
+        }
+        }
+    },
+    animation: {
+        typing: "typing 5s steps(20) infinite alternate , blink 1s infinite "
+    }
+    },
+},
+plugins: [],
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base{
+    body{
+        background-color: rgb(0, 0, 0);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+}
+    </style>
+
+</head>
+<body class="realtive">
+    <header class="top-0 fixed w-full bg-black  ">
+        <div class="flex justify-between items-center mt-5">
+            <div class="ml-[100px]">
+                <a href="" class="flex items-center hover:text-[50px] duration-200">
+                    <h1 class="text-[50px] text-blue-500 font-semibold " >R</h1>
+                <h1 class="text-[50px]   text-white">ahul.</h1>
+                </a>
+                </div>
+                <div class="flex items-center gap-10 text-white mr-[150px] content-center">
+                    
+                        <a href="#home" class="text-2xl font-semibold hover:text-blue-500 hover:text-3xl duration-200">Home</a>
+                        <a href="#about"class="text-2xl font-semibold hover:text-blue-500 hover:text-3xl duration-200">About</a>
+                        <a href="#service"class="text-2xl font-semibold hover:text-blue-500 hover:text-3xl duration-200">Service</a>
+                        <a href="#portfolio"class="text-2xl font-semibold hover:text-blue-500 hover:text-3xl duration-200">Portfolio</a>
+                        <a href="#contact"class="text-2xl font-semibold hover:text-blue-500 hover:text-3xl duration-200">Contacts</a>
+                    
+            </div>
+        </div>
+        </header>
+        <main>
+            <div >
+            <section id="home" class="bg-[url('profile2.png')] bg-contain bg-no-repeat bg-right bg-inherit  ml-52 ">
+                <div class="pt-60 pb-96 mx-w-5xl mx-auto">
+                    <!-- <img src="./assets/profile2.png" alt="">
+                <img src="profile2.png" alt=""> -->
+                <div class="pt-10">
+                    <h1 class="text-white text-3xl font-semibold animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white ">FullStack  Developer   /   Youtuber </h1>
+                <h1 class="text-white text-6xl font-bold mt-3  ">Hi, I’m <span class="text-blue-500">Rahul</span></h1>
+                <h1 class="text-white text-6xl font-bold mt-3 ">From Delhi,India</h1>
+                <a href="https://www.linkedin.com/in/rahul-kumar-2bb72b29b/"><button class="text-white w-[160px] h-[40px] rounded-xl   mt-12  transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...">Connect</button></a>
+                <a href="mailto:aonecreations1@gmail.com" class="ml-12 "><button class="text-white w-[160px] h-[40px] rounded-xl  mt-12  transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...">Join</button></a>
+                </div>
+                </div>
+            </section>
+            <section id="about">
+                <div class="flex gap-48 py-24">
+                    <img src="/assets/Dark Wallpaper 4K For Laptop Gallery.jpeg" alt="" class="h-[485px] w-80 ml-16 mt-32">
+                    <div class="text-white">
+                        <h1 class="text-6xl justify-center text-blue-500 font-semibold mb-44">About Me</h1>
+                        <p class="text-4xl font-semibold mb-4">Hello there! I am <span class="text-pink-700">Rahul</span>,</p>
+                        <p class="text-3xl font-semibold">A first-year student pursuing a Bachelor's degree in <span class="text-pink-700">B.Tech(CSE)</span> at <span class="text-pink-700">FunctionUp School of Technology</span>. I am enthusiastic about <span class="text-pink-700">FullStack Development</span>, and I am eager to apply my growing knowledge and skills in the field.</p>
+                    </div>
+                </div>
+                <div class="flex gap-48">
+                    <img src="/assets/IMG_2725.jpg" alt="" class="h-[400px] w-80  ml-16" >
+                        <img src="/assets/IMG_1176.jpg" alt="" class="h-[400px] w-80 -ml-72 mt-60">
+                    <div class="text-white">
+                        <h1 class="text-blue-500 text-5xl mt-32 mb-16 font-semibold">Academic Background</h1>
+                        <p class="text-3xl font-semibold">Currently, I am in my first year of the BTech program, where I have been exposed to a diverse range of subjects including <span class=" text-pink-700">Computer Programming,Frontend Development & Problem Solving</span>. My coursework has provided me with a strong foundation in Javascript,Java with DSA and HTML/CSS. I am particularly interested in Fronyend page building and also backend as well.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="service">
+    
+            </section>
+            <section id="portfolio">
+    
+            </section>
+            <section id="contact">
+    
+            </section>
+        </div>
+        </main>
+        <footer>
+    
+        </footer>
+</body>
+</html>
